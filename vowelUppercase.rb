@@ -1,14 +1,13 @@
-str = "Hello"
+str = "Hello World hello world"
 
 def uppercase(str)
-  vowels = ["a", "e", "i", "o", "u"]
   str = str.split("")
 
   str.each do |letter|
     if letter.include?("a") || letter.include?("e") || letter.include?("i") || letter.include?("o") || letter.include?("u")
       letter.upcase!
     end
-    puts letter
+    print letter
   end
 
 end
